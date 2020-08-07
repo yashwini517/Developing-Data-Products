@@ -1,0 +1,22 @@
+Assignment 3 - Developing Data Product
+Project:
+Create a web page presentation using R Markdown that features a plot created with Plotly.
+require(plotly)
+## Loading required package: plotly
+## Loading required package: ggplot2
+## Warning: package 'ggplot2' was built under R version 3.2.5
+## 
+## Attaching package: 'plotly'
+## The following object is masked from 'package:ggplot2':
+## 
+##     last_plot
+## The following object is masked from 'package:stats':
+## 
+##     filter
+## The following object is masked from 'package:graphics':
+## 
+##     layout
+plot_ly(mtcars, x = ~wt, y = ~mpg, type = "scatter", color = ~factor(cyl), size = ~hp)
+## No scatter mode specifed:
+##   Setting the mode to markers
+##   Read more about this attribute -> https://plot.ly/r/reference/#scatter-mo
